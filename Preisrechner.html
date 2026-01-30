@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preisrechner</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Preisrechner</h1>
+        <div class="items-grid">
+          <button class="item-name" onclick="addItem('Kaffee', 3.5)">
+            <span class="item-name">Kaffee</span>
+            <span class="item-price">3,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Tee', 2.5)">
+            <span class="item-name">Tee</span>
+            <span class="item-price">2,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Apfelschorle', 4.0)">
+            <span class="item-name">Apfelschorle</span>
+            <span class="item-price">4,00 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Wasser', 2.0)">
+            <span class="item-name">Wasser</span>
+            <span class="item-price">2,00 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Bratwurst', 5.5)">
+            <span class="item-name">Bratwurst</span>
+            <span class="item-price">5,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Schnitzel', 12.5)">
+            <span class="item-name">Schnitzel</span>
+            <span class="item-price">12,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Currywurst', 6.0)">
+            <span class="item-name">Currywurst</span>
+            <span class="item-price">6,00 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Brezel', 4.5)">
+            <span class="item-name">Brezel</span>
+            <span class="item-price">4,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Käsespätzle', 8.0)">
+            <span class="item-name">Käsespätzle</span>
+            <span class="item-price">8,00 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Pommes', 3.5)">
+            <span class="item-name">Pommes</span>
+            <span class="item-price">3,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Apfelstrudel', 4.5)">
+            <span class="item-name">Apfelstrudel</span>
+            <span class="item-price">4,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Berliner', 3.0)">
+            <span class="item-name">Berliner</span>
+            <span class="item-price">3,00 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Schwarzwälder', 5.0)">
+            <span class="item-name">Schwarzwälder</span>
+            <span class="item-price">5,00 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Brötchen', 2.5)">
+            <span class="item-name">Brötchen</span>
+            <span class="item-price">2,50 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Leberkäse', 7.0)">
+            <span class="item-name">Leberkäse</span>
+            <span class="item-price">7.00 €</span>
+          </button>
+          <button class="item-name" onclick="addItem('Kartoffelsalat', 6.5)">
+            <span class="item-name">Kartoffelsalat</span>
+            <span class="item-price">6.50 €</span>
+          </button>
+        </div>
+        <div class="total-section">
+          <span class="total-label">Gesamt</span>
+          <span class="total-amount" id="totalAmount">0,00 €</span>
+        </div>
+        <button class="clear-btn" onclick="clearTotal()">Zurücksetzen</button>
+        <div class="checkout-buttons">
+          <button class="checkout-btn vor-ort" onclick="checkoutVorOrt()">
+            Vor Ort
+          </button>
+          <button class="checkout-btn lieferung" onclick="checkoutLieferung()">
+            Lieferung (+2,50€)
+          </button>
+          <h6>*Lieferung bei einem Mindestbestellwert von 20€</h6>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h2>Bestellung</h2>
+        <div class="order-list" id="orderlist"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script></script>
+  </body>
+</html>

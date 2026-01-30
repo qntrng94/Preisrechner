@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 900px;
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+h1 {
+  display: block;
+  font-size: 2rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  font-weight: bold;
+}
+
+.sidebar {
+  min-width: 250px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-btn {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.item-name,
+.item-price {
+  display: block;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.item-name {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #007aff;
+}
+
+.total-section {
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: #007aff;
+}
+.clear-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 1rem;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.checkout-btn.vor-ort:hover {
+  background: #2da44e;
+}
+
+.checkout-btn.vor-ort {
+  background: #34c759;
+}
+.checkout-btn {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+}
+.checkout-buttons {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.checkout-btn.lieferung {
+  background: #007aff;
+}
+
+.checkout-btn.lieferung:hover {
+  background: #0056b3;
+}
+
+.order {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
